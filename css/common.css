@@ -92,9 +92,13 @@ body {
     padding: 1rem 7.5rem;
 }
 
+#main > section {
+    padding: 14rem 0;
+}
+
 .sec-title {
     text-align: center;
-    margin-top: 20rem;
+    margin-bottom: 6rem;
 }
 
 .sec-title h2 {
@@ -102,4 +106,35 @@ body {
     font-size: 6rem;
     color: var(--main-color);
     gap: 10px;
+}
+
+.con-wrap {
+    font-weight: 900;
+    font-size: 4rem;
+    color: var(--white70p);
+}
+
+#footer {
+    background: var(--main-color);
+    color: var(--sub2-color);
+    /* text-align: center; */
+    padding: 16rem 0;
+    text-align: center;
+}
+
+.foot-link ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.foot-logo {
+    display: inline-block;
+    margin-top: 6rem;
+    width: 25.2rem;
+    height: 6.6rem;
+}
+
+.foot-con {
+    margin-top: 6rem;
 }

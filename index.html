@@ -114,15 +114,15 @@
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <div class="menu-category">
-                                        <a href="#">
+                                    <a href="#">
+                                        <div class="menu-category">
                                             <figure><img src="./img/01.png" alt="#" /></figure>
                                             <p>
                                                 FRESH<br />
                                                 COFFEE
                                             </p>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                     <ul class="menu-list">
                                         <li>
                                             <a href="#">
@@ -152,10 +152,10 @@
                                         </li>
                                     </ul>
                                 </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -172,9 +172,12 @@
                         <li>
                             <a href="#">
                                 <figure><img src="./img/story01.png" alt="#" /></figure>
-                                <div>
-                                    <h3 class="con-title">PAIK'S COFFEE STORY</h3>
-                                    <p class="contents">
+                                <div class="story-con">
+                                    <h3 class="con-wrap">
+                                        PAIK'S COFFEE<br />
+                                        STORY
+                                    </h3>
+                                    <p>
                                         균형잡힌 바디감으로 긴 여운을 남기는<br />
                                         빽다방 커피를 만나보세요.
                                     </p>
@@ -185,9 +188,12 @@
                         <li>
                             <a href="#">
                                 <figure><img src="./img/story02.png" alt="#" /></figure>
-                                <div>
-                                    <h3 class="con-title">PAIK'S BRAND STORY</h3>
-                                    <p class="contents">
+                                <div class="story-con">
+                                    <h3 class="con-wrap">
+                                        PAIK'S BRAND<br />
+                                        STORY
+                                    </h3>
+                                    <p>
                                         합리적인 가격으로 만나는<br />
                                         맛있고 든든한 빽다방!
                                     </p>
@@ -208,17 +214,24 @@
                     </div>
                     <ul class="store-list">
                         <li>
-                            <h3 class="con-title">매장찾기</h3>
+                            <h3 class="con-wrap">매장찾기</h3>
+
                             <div class="f-row">
-                                <input type="text" placeholder="매장검색" />
-                                <button type="button" class="btn-search">
-                                    <img src="./img/search.svg" alt="검색" />
-                                </button>
+                                <div class="search">
+                                    <input type="text" placeholder="매장검색" />
+                                    <button type="button" class="btn-search">
+                                        <img src="./img/search.svg" alt="검색" />
+                                    </button>
+                                </div>
+                                <figure><img src="./img/store-01.png" alt="매장검색" /></figure>
                             </div>
                         </li>
                         <li>
-                            <h3 class="con-title">프랜차이즈</h3>
-                            <a href="#">창업안내를 도와드립니다.</a>
+                            <h3 class="con-wrap">프랜차이즈</h3>
+                            <a href="#"
+                                ><figure><img src="./img/store-02.png" alt="프랜차이즈" /></figure>
+                                <p>창업안내를 도와드립니다.</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -246,22 +259,24 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <a href="#">
-                                        <figure><img src="./img/ins01.jpg" alt="#" /></figure>
+                                        <figure><img src="./img/ins02.jpg" alt="#" /></figure>
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
                                     <a href="#">
-                                        <figure><img src="./img/ins01.jpg" alt="#" /></figure>
+                                        <figure><img src="./img/ins03.jpg" alt="#" /></figure>
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
                                     <a href="#">
-                                        <figure><img src="./img/ins01.jpg" alt="#" /></figure>
+                                        <figure><img src="./img/ins04.jpg" alt="#" /></figure>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <!-- If we need pagination -->
+                        <!-- button.btn-prev.btn -->
+                        <button class="btn-prev btn"><img src="./img/btn-prev.svg" alt="이전" /></button>
+                        <button class="btn-next btn"><img src="./img/btn-next.svg" alt="다음" /></button>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
@@ -278,13 +293,13 @@
                     <ul>
                         <li>
                             <a href="https://www.instagram.com/paikscoffee_official/"
-                                ><img src="./img/instagram-line.png" alt="인스타그램" />instagram</a
-                            >
+                                ><img src="./img/instagram-line.png" alt="인스타그램"
+                            /></a>
                         </li>
                         <li>
                             <a href="https://ko-kr.facebook.com/ipaikscoffee/"
-                                ><img src="./img/facebook-line.png" alt="페이스북" /> facebook</a
-                            >
+                                ><img src="./img/facebook-line.png" alt="페이스북"
+                            /></a>
                         </li>
                     </ul>
                 </div>
@@ -304,28 +319,11 @@
         </footer>
         <!-- //e: footer -->
 
-        <script>
-            const visualSlider = new Swiper(".visual-slider", {
-                loop: true, // 반복
-                autoplay: false,
-                speed: 1000, // 기본값은 300ms
-
-                spaceBetween: 0, // 사이 간격(px)
-                centeredSlides: true, // 첫번째 슬라이드를 가운데로
-
-                // If we need pagination
-                pagination: {
-                    el: ".visual-slider .swiper-pagination",
-                    type: "bullet",
-                    clickable: true, // 클릭가능
-                },
-
-                // Navigation arrows
-                navigation: {
-                    nextEl: ".visual-slider .btn-next",
-                    prevEl: ".visual-slider .btn-prev",
-                },
-            });
-        </script>
+        <aside>
+            <a href="#"><img src="./img/q-icon01.png" alt="창업설명" /></a>
+            <a href="#"><img src="./img/q-icon02.png" alt="창업상담" /></a>
+            <a href="#header"><img src="./img/q-icon03.png" alt="TOP" /></a>
+        </aside>
+        <script src="./js/script.js"></script>
     </body>
 </html>
