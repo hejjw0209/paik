@@ -6,9 +6,9 @@
     font-size: 100%; /* 16px --> 1rem */
     font-size: 62.5%; /* 10px --> 1rem */
     --main-color: #001f60;
-    --main-opacity: rgba(0, 31, 96, 10);
+    --main-opacity: rgba(0, 31, 96, 0.1);
     --sub-color: #ffe800;
-    --sub-opacity: rgba(255, 232, 0, 10);
+    --sub-opacity: rgba(255, 232, 0, 0.1);
     --sub2-color: #e6e7e8;
     --text-color: #333;
     --black50p: rgba(0, 0, 0, 0.5);
@@ -114,6 +114,69 @@ body {
     color: var(--white70p);
 }
 
+.bread {
+    text-align: center;
+    background: var(--main10p);
+    padding: 8rem 0;
+    gap: 3rem;
+}
+
+.bread h1 {
+    font-weight: 600;
+    font-size: 5rem;
+    color: var(--main-color);
+}
+
+.bread p {
+    font-size: 3.4rem;
+    color: #000;
+}
+
+.category {
+    display: flex;
+    gap: 2rem;
+}
+
+.category li {
+    margin: 0 auto;
+}
+
+.category a {
+    padding: 1.4rem 4rem;
+    border: 1px solid var(--main-color);
+    border-radius: var(--rds);
+    background: #fff;
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
+.category a:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.tit-con * {
+    text-align: center;
+}
+
+.tit-con p {
+    font-size: 3.4rem;
+    color: #000;
+}
+.tit-con h2 {
+    font-weight: 900;
+    font-size: 6rem;
+    color: var(--main-color);
+    margin-top: 1rem;
+}
+.tit-con strong {
+    font-weight: 500;
+    font-size: 4.2rem;
+    color: #000;
+    margin-top: 8rem;
+}
+
 #footer {
     background: var(--main-color);
     color: var(--sub2-color);
@@ -137,4 +200,19 @@ body {
 
 .foot-con {
     margin-top: 6rem;
+}
+
+aside {
+    display: flex;
+    gap: 2rem;
+    position: fixed;
+    right: 6rem;
+    bottom: 6rem;
+    flex-direction: column;
+    z-index: 100;
+}
+
+aside a {
+    width: 10rem;
+    height: 10rem;
 }

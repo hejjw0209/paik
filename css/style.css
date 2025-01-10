@@ -287,18 +287,3 @@
     height: 100%;
     object-fit: cover;
 }
-
-aside {
-    display: flex;
-    gap: 2rem;
-    position: fixed;
-    right: 6rem;
-    bottom: 6rem;
-    flex-direction: column;
-    z-index: 100;
-}
-
-aside a {
-    width: 10rem;
-    height: 10rem;
-}

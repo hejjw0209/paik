@@ -1,0 +1,126 @@
+@charset 'utf-8';
+
+.con-tit {
+    font-weight: 700;
+    font-size: 4rem;
+    color: #fff;
+    position: absolute;
+    bottom: 6rem;
+    left: 6rem;
+}
+
+
+.blending-con {
+    display: flex;
+
+    width: 100%;
+}
+
+.blending-con li figure img {
+    border-radius: var(--rds);
+    overflow: hidden;
+    position: relative;
+}
+
+.coffee-con dl dt {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 3.2rem;
+    color: var(--main-color);
+    background: var(--sub-color);
+    padding: 2rem;
+}
+.coffee-con dl dd {
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: #000;
+}
+.coffee-con dl dd strong {
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #000;
+}
+
+.notice {
+    background: var(--sub2-color);
+    padding: 4rem;
+    border-radius: 4rem;
+}
+
+.cupping-note {
+    background: var(--sub-opacity);
+}
+
+.note-wrap {
+    text-align: center;
+}
+
+.inner h3 {
+    font-weight: 500;
+    font-size: 4.2rem;
+    color: #000;
+    text-align: center;
+}
+
+.note-wrap p {
+    font-weight: 500;
+    font-size: 3rem;
+    color: #000;
+    margin-top: 8rem;
+}
+
+.note-list {
+    display: flex;
+}
+
+.note-list li {
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.note-list li figure img {
+    width: 34.6rem;
+    height: 34.6rem;
+    background: #fff;
+    object-fit: none;
+    border-radius: 50%;
+}
+
+.coffee-taste {
+    background: #fff;
+    border-radius: var(--rds);
+    padding: 10rem;
+}
+.roasting-point {
+    background: #fff;
+    border-radius: var(--rds);
+    padding: 10rem;
+}
+
+.signature-list {
+    display: flex;
+    margin-top: 8rem;
+}
+
+.signature-list li {
+    gap: 2rem;
+}
+
+.signature-list li figure img {
+    width: 34.4rem;
+    height: 34.4rem;
+    background: var(--main10p);
+    border-radius: var(--rds);
+    object-fit: none;
+}
+.signature-list li dl {
+}
+.signature-list li dl dt {
+    font-weight: 500;
+    font-size: 4rem;
+    color: #000;
+}
+.signature-list li dl dd {
+    font-weight: 300;
+    font-size: 2.4rem;
+}
