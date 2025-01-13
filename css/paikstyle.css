@@ -1,0 +1,140 @@
+@charset 'utf-8';
+
+.logo1 {
+    text-align: center;
+    margin-top: 10rem;
+}
+.logo-row {
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.color-system {
+    display: flex;
+    gap: 2rem;
+    margin-top: 8rem;
+}
+
+.color-system li:nth-child(1) {
+    width: 46.5rem;
+    height: 10rem;
+    background: var(--main-color);
+}
+.color-system li:nth-child(2) {
+    width: 46.5rem;
+    height: 10rem;
+    background: var(--sub-color);
+}
+.color-system li:nth-child(3) {
+    width: 46.5rem;
+    height: 10rem;
+    background: var(--sub2-color);
+}
+
+.color-system li dl {
+    margin-top: 14rem;
+    text-align: center;
+}
+.color-system li dl dt {
+    font-weight: 700;
+    font-size: 4.2rem;
+    color: #000;
+}
+.color-system li dl dd {
+    font-weight: 300;
+    font-size: 3rem;
+    color: #000;
+}
+
+.value {
+    margin-top: 14rem;
+}
+.value-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.value-list li {
+    margin-top: 8rem;
+    width: 46.7rem;
+    min-height: 88.1rem;
+    background: var(--main10p);
+    border-radius: var(--rds);
+    padding: 6rem;
+}
+
+.value-list li figure {
+    width: 22.3rem;
+    height: 22.3rem;
+    background: #fff;
+    border-radius: 50%;
+
+    text-align: center;
+}
+.value-list li figure img {
+    object-fit: none;
+}
+
+.value-list li dl {
+    /* text-align: center; */
+}
+.value-list li dl dt {
+    font-weight: 700;
+    font-size: 4.2rem;
+    color: #000;
+    margin-top: 4rem;
+}
+.value-list li dl dd {
+    font-weight: 300;
+    font-size: 3.4rem;
+    color: #000;
+    margin-top: 4rem;
+}
+
+.value-list li dl dd strong {
+    font-weight: 700;
+}
+
+.signature figure {
+    margin-top: 8rem;
+}
+
+.signature h5 {
+    font-weight: 300;
+    font-size: 3.4rem;
+    color: #000;
+    margin-top: 8rem;
+}
+
+.signature h5 strong {
+    font-weight: 700;
+}
+
+.coffee {
+    width: 100%;
+    min-height: 101.5rem;
+    background: var(--sub-opacity);
+    border-radius: var(--rds);
+    padding: 10rem;
+}
+
+.coffee .tit-con {
+    text-align-last: left;
+}
+
+.drink {
+    margin-top: 8rem;
+    width: 100%;
+    min-height: 101.5rem;
+    background: var(--sub-opacity);
+    border-radius: var(--rds);
+    padding: 10rem;
+    text-align: right;
+}
+
+.drink .tit-con {
+    text-align: right;
+}

@@ -1,25 +1,57 @@
 @charset 'utf-8';
 
-.con-tit {
+.blending-con li {
+    display: flex;
+
+    margin-top: 10rem;
+    position: relative;
+}
+
+.blending-con li:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.blending-con li figure {
+    border-radius: var(--rds);
+    width: 59rem;
+    height: 67.6rem;
+    overflow: hidden;
+}
+
+.blending-con li::before figure img {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.con-tit:nth-child(1n) {
     font-weight: 700;
     font-size: 4rem;
     color: #fff;
     position: absolute;
     bottom: 6rem;
     left: 6rem;
+    line-height: 1;
 }
 
-
-.blending-con {
-    display: flex;
-
-    width: 100%;
+.con-tit:nth-child(2n) {
+    font-weight: 700;
+    font-size: 4rem;
+    color: #fff;
+    position: absolute;
+    bottom: 6rem;
+    right: 6rem;
+    line-height: 1;
+    text-align: right;
 }
 
-.blending-con li figure img {
-    border-radius: var(--rds);
-    overflow: hidden;
-    position: relative;
+.coffee-con dl {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    max-width: 54rem;
 }
 
 .coffee-con dl dt {
@@ -34,8 +66,11 @@
     font-weight: 500;
     font-size: 2.4rem;
     color: #000;
+    margin-top: 3rem;
 }
-.coffee-con dl dd strong {
+
+.notice strong {
+    display: block;
     font-weight: 700;
     font-size: 2.4rem;
     color: #000;
@@ -45,6 +80,8 @@
     background: var(--sub2-color);
     padding: 4rem;
     border-radius: 4rem;
+    margin: 7rem 4rem;
+    max-width: 54rem;
 }
 
 .cupping-note {
@@ -71,11 +108,11 @@
 
 .note-list {
     display: flex;
+    gap: 2rem;
+    margin: 8rem auto;
 }
 
 .note-list li {
-    margin: 0 auto;
-    gap: 2rem;
 }
 
 .note-list li figure img {
@@ -100,10 +137,11 @@
 .signature-list {
     display: flex;
     margin-top: 8rem;
+    gap: 2rem;
 }
 
 .signature-list li {
-    gap: 2rem;
+    max-width: 34.5rem;
 }
 
 .signature-list li figure img {
@@ -116,11 +154,13 @@
 .signature-list li dl {
 }
 .signature-list li dl dt {
+    margin-top: 3.4rem;
     font-weight: 500;
     font-size: 4rem;
     color: #000;
 }
 .signature-list li dl dd {
+    margin-top: 3rem;
     font-weight: 300;
     font-size: 2.4rem;
 }
