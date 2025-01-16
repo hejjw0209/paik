@@ -80,7 +80,7 @@
     background: var(--sub2-color);
     padding: 4rem;
     border-radius: 4rem;
-    margin: 7rem 4rem;
+    margin-top: 7rem;
     max-width: 54rem;
 }
 
@@ -110,6 +110,8 @@
     display: flex;
     gap: 2rem;
     margin: 8rem auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .note-list li {
@@ -128,10 +130,18 @@
     border-radius: var(--rds);
     padding: 10rem;
 }
+
+.cupping-note h4 {
+    font-weight: 700;
+    font-size: 3.4rem;
+    text-align: center;
+}
+
 .roasting-point {
     background: #fff;
     border-radius: var(--rds);
     padding: 10rem;
+    margin-top: 8rem;
 }
 
 .signature-list {
@@ -152,11 +162,12 @@
     object-fit: none;
 }
 .signature-list li dl {
+    text-align: center;
 }
 .signature-list li dl dt {
     margin-top: 3.4rem;
-    font-weight: 500;
-    font-size: 4rem;
+    font-weight: 600;
+    font-size: 3rem;
     color: #000;
 }
 .signature-list li dl dd {

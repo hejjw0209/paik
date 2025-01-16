@@ -40,12 +40,12 @@
 }
 .color-system li dl dt {
     font-weight: 700;
-    font-size: 4.2rem;
+    font-size: 3.6rem;
     color: #000;
 }
 .color-system li dl dd {
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #000;
 }
 
@@ -60,36 +60,38 @@
 .value-list li {
     margin-top: 8rem;
     width: 46.7rem;
-    min-height: 88.1rem;
+    min-height: 60rem;
     background: var(--main10p);
     border-radius: var(--rds);
     padding: 6rem;
 }
 
 .value-list li figure {
+    text-align: center;
+}
+.value-list li figure img {
     width: 22.3rem;
     height: 22.3rem;
     background: #fff;
     border-radius: 50%;
 
-    text-align: center;
-}
-.value-list li figure img {
+    justify-content: center;
+    align-items: center;
     object-fit: none;
 }
 
 .value-list li dl {
-    /* text-align: center; */
+    text-align: center;
 }
 .value-list li dl dt {
     font-weight: 700;
-    font-size: 4.2rem;
+    font-size: 3.6rem;
     color: #000;
     margin-top: 4rem;
 }
 .value-list li dl dd {
     font-weight: 300;
-    font-size: 3.4rem;
+    font-size: 3rem;
     color: #000;
     margin-top: 4rem;
 }
@@ -104,7 +106,7 @@
 
 .signature h5 {
     font-weight: 300;
-    font-size: 3.4rem;
+    font-size: 3rem;
     color: #000;
     margin-top: 8rem;
 }
@@ -135,6 +137,6 @@
     text-align: right;
 }
 
-.drink .tit-con {
+.drink .tit-con * {
     text-align: right;
 }
