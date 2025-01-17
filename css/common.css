@@ -203,7 +203,7 @@ body {
 
 .foot-logo {
     display: inline-block;
-    margin-top: clamp(3rem, 4rem, 6rem);
+    margin-top: 6rem;
     width: 25.2rem;
     height: 6.6rem;
 }
@@ -233,7 +233,7 @@ aside a {
     border-radius: var(--rds);
 }
 #footer .q-hidden {
-    visibility: hidden;
+    display: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -248,16 +248,17 @@ aside a {
         height: 7.5rem;
     }
 
-    #footer .q-hidden li {
-        border: 2px solid #fff;
+    #footer .q-menu .q-hidden {
+        display: block;
+        border: 2px solid #e6e7e8;
         border-radius: 50%;
-        visibility: visible;
     }
 
     .foot-logo {
         width: 20rem;
         height: 5.2rem;
     }
+
     aside .btn-hidden {
         display: none;
     }
