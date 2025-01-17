@@ -21,7 +21,7 @@ const visualSlider = new Swiper(".visual-slider", {
 });
 const menuSlider = new Swiper(".menu-slider", {
     loop: true, // 반복
-    autoplay: true,
+    autoplay: false,
     speed: 1000, // 기본값은 300ms
 
     spaceBetween: 20, // 사이 간격(px)
@@ -41,7 +41,7 @@ const snsSlider = new Swiper(".sns-slider", {
 
     spaceBetween: 20, // 사이 간격(px)
     centeredSlides: true, // 첫번째 슬라이드를 가운데로
-    slidesPerView: 1.5,
+    slidesPerView: 1,
 
     // If we need pagination
     pagination: {
@@ -58,7 +58,21 @@ const snsSlider = new Swiper(".sns-slider", {
 
     // Responsive breakpoints
     breakpoints: {
-        1280: {
+        500: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+        },
+    },
+    // Responsive breakpoints
+    breakpoints: {
+        700: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+    },
+    // Responsive breakpoints
+    breakpoints: {
+        900: {
             slidesPerView: 3,
             spaceBetween: 20,
         },

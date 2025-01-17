@@ -80,7 +80,7 @@
     width: 97.8723%;
 }
 
-.menu-category {
+.menu-slider .swiper-slide a {
     position: relative;
     width: 86.3rem;
     /* width: 46.9022%; */
@@ -213,7 +213,7 @@
 }
 .coffee-story li a .story-con {
     flex-grow: 1;
-    padding: 6.6rem 6.2rem;
+    padding: clamp(2rem, 6vw, 6.6rem);
 
     display: flex;
     flex-direction: column;
@@ -222,6 +222,7 @@
 
 .story-con p {
     font-size: 3rem;
+    line-height: 1.5;
     color: var(--sub2-color);
 }
 
@@ -279,7 +280,7 @@
     font-weight: 600;
     font-size: 3rem;
     outline: none;
-    width: 66rem;
+    width: 69.4737%;
     color: var(--main-color);
 }
 
@@ -364,19 +365,21 @@
         display: none;
     }
     .visual {
-        width: 128rem;
-        aspect-ratio: 1/0.375;
+        width: 100%;
+        /* aspect-ratio: 1/0.375; */
         margin: 0 auto;
     }
 
     .menu-slider-wrap {
-        width: 84.375%;
+        /* width: 84.375%; */
         margin: 0 auto;
     }
 
-    .menu-category {
-        width: 53rem;
-        height: 67.6rem;
+    .menu a {
+        /* width: 53rem; */
+        width: 49.0741%;
+        /* height: 67.6rem; */
+        aspect-ratio: 1/1.275471698113208;
     }
 
     .menu-category figure img {
@@ -395,10 +398,12 @@
         /* height: 32.8rem; */
     }
 
-    .menu-list li figure {
+    .menu-list li a {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
-
-    .menu-list li figure img {
+    .menu-list li a figure img {
     }
 
     .coffee-story figure img {
@@ -418,13 +423,59 @@
 
 /* 중간 분기점 */
 
+@media screen and (max-width: 1075px) {
+    .menu-slider a {
+        width: 50%;
+        aspect-ratio: 1/2;
+    }
+
+    .menu-list li {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 4rem;
+        width: 45%;
+        position: relative;
+    }
+
+    .menu-list li figure {
+        position: absolute;
+        top: 0;
+    }
+}
+
+/* 중간 분기점 2 */
+
 @media screen and (max-width: 800px) {
+    .inner {
+        width: 74rem;
+    }
+
+    .menu-slider-wrap .swiper-wrapper a {
+        width: 100%;
+        aspect-ratio: 1;
+        margin: 0 auto;
+    }
+
+    .menu-list li {
+        display: none;
+    }
+
+    .story .inner {
+        width: 80%;
+    }
+
     .coffee-story li a {
         flex-direction: column;
+        position: relative;
+        /* position: relative; */
+    }
+
+    .coffee-story:nth-child(2) li a {
+        flex-direction: column;
+        /* position: relative; */
     }
 
     .coffee-story li a figure {
-        position: relative;
         width: 100%;
         aspect-ratio: 1/0.6666666666666667;
     }
@@ -433,44 +484,194 @@
         font-weight: 3rem;
         color: var(--main-color);
         position: absolute;
-        bottom: 2rem;
+        top: 30rem;
     }
 
     .story-con p {
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+
+    .store .inner {
+        width: 80%;
+    }
+
+    .store-list {
+        flex-direction: column;
+    }
+
+    .store-list .con-wrap {
+        position: absolute;
+        top: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .store-list li figure {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 6rem;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .search {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        bottom: 3rem;
+    }
+
+    .search input {
+        font-size: 2.4rem;
+    }
+
+    .search img {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .store-list .con-wrap {
+        font-size: 3rem;
+    }
+
+    .store-list li + li p {
+        font-size: 2.4rem;
+        display: block;
+        width: 80%;
+        bottom: 3rem;
+    }
+
+    .sns .inner {
+        width: 80%;
     }
 }
 
-/* 모바일 디자인 */
+/* 중간 분기점 3*/
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 600px) {
     .inner {
-        width: 76.7442%;
+        width: 50rem;
     }
 
-    .visual-slider-wrap {
-        width: 43rem;
+    .visual-slider-wrap .visual-slider .swiper-wrapper .swiper-slide a figure img {
+        width: 100%;
         aspect-ratio: 1/0.8372093023255814;
+        object-fit: cover;
     }
 
-    .menu-category {
-        width: 76.7442%;
+    .visual-slider .btn {
+        display: none;
+    }
+
+    .menu-slider-wrap .swiper-wrapper a {
+        width: 80%;
         aspect-ratio: 1/0.9515151515151515;
         border-radius: 4rem;
         overflow: hidden;
+        margin: 0 auto;
     }
 
-    .menu-category p {
+    .menu a p {
         font-size: 3.4rem;
+        bottom: 3rem;
+        left: 3rem;
     }
 
     .menu-list {
         display: none;
     }
 
+    .coffee-story li a {
+        width: 100%;
+        position: relative;
+    }
+
+    .coffee-story li a figure {
+        position: relative;
+    }
+
+    .story-con h3 {
+        font-size: 3rem;
+        position: absolute;
+        top: 22rem;
+
+        z-index: 1;
+    }
+
+    .story-con p {
+        font-size: 2.4rem;
+    }
+
+    .coffee-story li a figure img::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 100%);
+    }
+
+    .store-list {
+        flex-direction: column;
+    }
+    .store-list li figure img {
+        width: 100%;
+        aspect-ratio: 1/1.078787878787879;
+        object-fit: cover;
+    }
+
+    .search {
+        width: 72.7273%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .search input {
+        font-size: 2.2rem;
+    }
+
+    .search img {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .store-list .con-wrap {
+        font-size: 3rem;
+    }
+
+    .store-list li + li p {
+        font-size: 2.2rem;
+        display: block;
+        width: 72.7273%;
+    }
+
+    .story-con p {
+    }
+
     .sns-slider figure {
-        width: 76.7442%;
+        width: 100%;
         aspect-ratio: 1/0.9515151515151515;
         object-fit: cover;
+    }
+}
+
+/* 모바일 분기점 */
+
+@media screen and (max-width: 430px) {
+    .inner {
+        width: 33rem;
+    }
+
+    .story-con h3 {
+        font-size: 3rem;
+        position: absolute;
+        top: 14rem;
+
+        z-index: 1;
+    }
+
+    .story-con p {
+        font-size: 2rem;
     }
 }

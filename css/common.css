@@ -54,7 +54,7 @@ button {
 }
 
 body {
-    font: 2rem/1.5 "Roboto", "Pretendard", sans-serif;
+    font: 2rem/1.2 "Roboto", "Pretendard", sans-serif;
     word-break: keep-all;
 }
 
@@ -187,25 +187,33 @@ body {
     background: var(--main-color);
     color: var(--sub2-color);
     /* text-align: center; */
-    padding: 16rem 0;
+    padding: clamp(6rem, 10rem, 16rem) 0;
     text-align: center;
 }
 
 .foot-link ul {
     display: flex;
-    gap: 2rem;
+    gap: clamp(1rem, 1vw, 2rem);
     justify-content: center;
+}
+
+.link-hidden {
+    display: none;
 }
 
 .foot-logo {
     display: inline-block;
-    margin-top: 6rem;
+    margin-top: clamp(3rem, 4rem, 6rem);
     width: 25.2rem;
     height: 6.6rem;
 }
 
 .foot-con {
     margin-top: 6rem;
+}
+
+.copyright {
+    line-height: 1.5;
 }
 
 aside {
@@ -220,13 +228,58 @@ aside {
 
 aside a {
     width: 9.4rem;
-    height: 9.4rem;
+    aspect-ratio: 1;
     border: 2px solid #fff;
     border-radius: var(--rds);
 }
+#footer .q-hidden {
+    visibility: hidden;
+}
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 800px) {
+    .foot-link {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .foot-link li {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    #footer .q-hidden li {
+        border: 2px solid #fff;
+        border-radius: 50%;
+        visibility: visible;
+    }
+
+    .foot-logo {
+        width: 20rem;
+        height: 5.2rem;
+    }
+    aside .btn-hidden {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        --rds: 4rem;
+    }
+
     .sec-title {
         margin-bottom: 4rem;
+    }
+
+    aside {
+        position: fixed;
+        right: 3rem;
+        bottom: 2rem;
+    }
+
+    aside .btn-top {
+        width: 8rem;
+        aspect-ratio: 1;
     }
 }
