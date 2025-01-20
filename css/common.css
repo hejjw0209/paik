@@ -264,6 +264,23 @@ aside a {
     }
 }
 
+@media screen and (max-width: 700px) {
+    .sec-title {
+        margin-bottom: 5rem;
+    }
+
+    aside {
+        position: fixed;
+        right: 1.5rem;
+        bottom: 1.5rem;
+    }
+
+    aside .btn-top {
+        width: 8rem;
+        aspect-ratio: 1;
+    }
+}
+
 @media screen and (max-width: 600px) {
     :root {
         --rds: 4rem;
@@ -275,7 +292,7 @@ aside a {
 
     aside {
         position: fixed;
-        right: 3rem;
+        right: 2rem;
         bottom: 2rem;
     }
 

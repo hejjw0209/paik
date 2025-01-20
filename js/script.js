@@ -21,7 +21,7 @@ const visualSlider = new Swiper(".visual-slider", {
 });
 const menuSlider = new Swiper(".menu-slider", {
     loop: true, // 반복
-    autoplay: false,
+    autoplay: true,
     speed: 1000, // 기본값은 300ms
 
     spaceBetween: 20, // 사이 간격(px)
