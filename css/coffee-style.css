@@ -27,7 +27,7 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
 }
 
-.con-tit:nth-child(1n) {
+/* .con-tit:nth-child(1n) {
     font-weight: 700;
     font-size: 4rem;
     color: #fff;
@@ -46,7 +46,7 @@
     right: 6rem;
     line-height: 1;
     text-align: right;
-}
+} */
 
 .coffee-con dl {
     margin-left: 6rem;
@@ -125,11 +125,11 @@
     border-radius: 50%;
 }
 
-.coffee-taste {
+/* .coffee-taste {
     background: #fff;
     border-radius: var(--rds);
     padding: 10rem;
-}
+} */
 
 .cupping-note h4 {
     font-weight: 700;
@@ -137,12 +137,12 @@
     text-align: center;
 }
 
-.roasting-point {
+/* .roasting-point {
     background: #fff;
     border-radius: var(--rds);
     padding: 10rem;
     margin-top: 8rem;
-}
+} */
 
 .signature-list {
     display: flex;
@@ -174,4 +174,20 @@
     margin-top: 3rem;
     font-weight: 300;
     font-size: 2.4rem;
+}
+
+.coffee-taste table {
+    margin: 0 auto;
+}
+
+.coffee-taste table tbody tr th {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.coffee-taste table tbody tr td figure {
+    display: flex;
+    width: 7rem;
+    height: 7rem;
+    gap: 10rem;
 }
