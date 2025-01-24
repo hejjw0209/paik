@@ -93,6 +93,10 @@ body {
     padding: 1rem 7.5rem;
 }
 
+.hamburger {
+    display: none;
+}
+
 #main > section {
     padding: 10rem 0;
 }

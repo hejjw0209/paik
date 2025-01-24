@@ -140,3 +140,6 @@
 .drink .tit-con * {
     text-align: right;
 }
+
+/* 태블릿 분기점 */
+@media screen and (min-width: 1280px);

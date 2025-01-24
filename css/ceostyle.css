@@ -110,3 +110,31 @@
     color: #000;
     margin-top: 2rem;
 }
+
+/* 태블릿 분기점 */
+@media screen and (min-width: 1280px) {
+    .inner {
+        width: 108rem;
+        width: 84.375%;
+    }
+    .logo {
+        padding: 0;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 0;
+    }
+
+    .gnb {
+        display: none;
+    }
+
+    .category {
+        gap: 1rem;
+    }
+
+    .category li a {
+        min-width: 20.8rem;
+    }
+}
