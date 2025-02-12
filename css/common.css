@@ -3,7 +3,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 :root {
-    font-size: 100%; /* 16px --> 1rem */
     font-size: 62.5%; /* 10px --> 1rem */
     --main-color: #001f60;
     --main-opacity: rgba(0, 31, 96, 0.5);
@@ -61,18 +60,36 @@ body {
 .inner {
     width: 144rem;
     margin: 0 auto;
-    /* background: rgba(255, 255, 0, 0.1); */
 }
 
 #header {
     width: 100%;
 }
 
+/* 서브메뉴 바탕 역할 */
+#header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100px; /* header의 height */
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(6px);
+    transition: 0.6s;
+}
+
+#header.active::after {
+    height: 310px;
+}
+
 #header nav {
-    height: 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 
 #header .logo {
@@ -85,16 +102,61 @@ body {
     display: flex;
 }
 
-.gnb li a {
-    font-weight: 600;
-    color: var(--text-color);
-    /* border: 1px solid #000; */
-    display: block;
-    padding: 1rem 7.5rem;
+.gnb > li {
+    position: relative;
 }
 
-.hamburger {
+.gnb > li > a {
+    font-weight: 600;
+    color: var(--text-color);
+    display: block;
+    padding: 4rem 7.5rem;
+}
+
+.gnb > li.on > a {
+    color: var(--main-color);
+}
+
+.gnb > li.on > a::after {
+    content: "";
+    color: var(--main-color);
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    width: 10rem;
+    transform: translateX(-50%);
+    height: 4px;
+    z-index: 10000;
+    background: var(--main-color);
+}
+
+#header .hamburger {
     display: none;
+}
+
+#header .inner nav .gnb .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+
+    width: 100%;
+
+    font-size: 18px;
+    /* jQuery를 위한 준비 */
+    display: none;
+}
+
+#header .inner nav .gnb .submenu li:first-child {
+    margin-top: 3.2rem;
+}
+
+#header .inner nav .gnb .submenu li a {
+    display: block;
+
+    padding: 10px;
+    text-align: center;
+    margin-top: 0.8rem;
 }
 
 #main > section {
@@ -124,18 +186,19 @@ body {
 
     background: var(--main10p);
     width: 100%;
-    padding: 8rem 0;
+    padding: 6rem 0;
     gap: 3rem;
 }
 
 .bread h1 {
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 3.4rem;
     color: var(--main-color);
 }
 
 .bread p {
-    font-size: 3.4rem;
+    font-size: 3rem;
+    margin-top: 2rem;
     color: #000;
 }
 

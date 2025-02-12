@@ -112,7 +112,7 @@
 }
 
 /* 태블릿 분기점 */
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
     .inner {
         width: 108rem;
         width: 84.375%;
@@ -137,4 +137,4 @@
     .category li a {
         min-width: 20.8rem;
     }
-}
+} */

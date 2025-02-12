@@ -1,3 +1,30 @@
+$(function () {
+    // 대상을 변수에 저장
+    const $header = $("header");
+    const $subMenu = $(".submenu");
+    const $menu = $(".gnb > li");
+    const duration = 400;
+    console.log($menu);
+
+    // 메뉴 영역에 마우스가 들어오면(event: mouseenter )
+    $menu.on("mouseenter", function () {
+        $subMenu.stop().slideDown(duration); // 모든 서브메뉴 떨어뜨리기
+
+        // 메뉴 활성화 표시: on클래스 부여
+        $(this).addClass("on");
+
+        $header.addClass("active");
+    });
+
+    // 메뉴 영역에 마우스가 나가면
+    $menu.on("mouseleave", function () {
+        // submenu를 찾아서 슬라이드 업
+        $subMenu.stop().slideUp(duration);
+        $menu.removeClass("on");
+        $header.removeClass("active");
+    });
+});
+
 const visualSlider = new Swiper(".visual-slider", {
     loop: true, // 반복
     autoplay: true,
