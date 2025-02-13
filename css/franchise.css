@@ -1,1 +1,161 @@
 @charset 'utf-8';
+
+.franchise .inner {
+    margin: 20rem;
+}
+
+.inquiry .inner {
+    margin: 20rem;
+}
+
+.step {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    justify-content: center;
+}
+
+.step li {
+    background: #f8f8f9;
+
+    height: 49.5rem;
+    border-radius: var(--rds);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.step .ico {
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 4rem 0 4rem;
+}
+
+.step h3 {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--main-color);
+    display: flex;
+}
+
+.step li .text {
+    display: flex;
+    width: 34.5rem;
+    flex-direction: column;
+}
+
+.step li .text::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    width: 26.5rem;
+    height: 0.1rem;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.step li .text strong {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--main-color);
+    margin-top: 2rem;
+    padding: 0 4rem;
+}
+
+.step li .text p {
+    margin-top: 2rem;
+    padding: 0 4rem;
+    line-height: 1.5;
+}
+
+.notice {
+    margin-top: 6rem;
+    margin-bottom: 20rem;
+    padding: 10rem;
+    border: 1px solid var(--main-color);
+    border-radius: var(--rds);
+    color: var(--main-color);
+}
+
+.franchise .notice em {
+    margin-top: 2rem;
+}
+
+.condition {
+    padding: 20rem 0 20rem 0;
+    background: var(--sub-opacity);
+}
+
+.not-text {
+    margin-top: 8rem;
+    display: flex;
+    color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.not-text::before {
+    content: "!";
+    display: grid;
+    width: 5rem;
+    height: 5rem;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 34px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.inqu {
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inqu li {
+    background: var(--main10p);
+    width: 46.7rem;
+    height: 24.4rem;
+    border-radius: var(--rds);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.inqu strong {
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--main-color);
+}
+
+.inqu p {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.btn-theborn {
+    display: grid;
+    width: 95.4rem;
+    height: 10rem;
+    background: var(--sub-color);
+    border-radius: var(--rds);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 42px;
+    color: var(--main-color);
+    margin-top: 6rem;
+}
