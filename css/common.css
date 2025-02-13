@@ -113,21 +113,21 @@ body {
     padding: 4rem 7.5rem;
 }
 
-.gnb > li.on > a {
-    color: var(--main-color);
-}
-
-.gnb > li.on > a::after {
+.gnb > li > a::after {
     content: "";
-    color: var(--main-color);
+    background: var(--main-color);
     position: absolute;
     bottom: 2px;
     left: 50%;
-    width: 10rem;
+    width: 0;
     transform: translateX(-50%);
     height: 4px;
-    z-index: 10000;
-    background: var(--main-color);
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.gnb > li.on > a::after {
+    width: 10rem;
 }
 
 #header .hamburger {
@@ -208,9 +208,6 @@ body {
     margin: 10rem auto;
     justify-content: center;
     align-items: center;
-}
-
-.category li {
 }
 
 .category a {
