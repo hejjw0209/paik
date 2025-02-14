@@ -25,6 +25,7 @@
 
     width: 34rem;
     display: flex;
+    gap: 2rem;
 }
 
 .search input {

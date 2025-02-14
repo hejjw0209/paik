@@ -52,6 +52,7 @@
     margin-top: 4rem;
 }
 .ceo-ipsum h3 {
+    margin-top: 2rem;
     font-weight: 500;
     font-size: 4.2rem;
     color: var(--main-color);
@@ -83,6 +84,7 @@
 
 .history-con li {
     font-size: 3.4rem;
+    line-height: 1.5;
 }
 
 .history-con li::before {
